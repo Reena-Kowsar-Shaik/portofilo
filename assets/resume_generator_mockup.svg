@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="resBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080f22"/>
+      <stop offset="100%" stop-color="#030713"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#resBg)"/>
+
+  <!-- Top App Navigation -->
+  <rect x="30" y="20" width="740" height="48" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+  <circle cx="55" cy="44" r="6" fill="#ef4444"/>
+  <circle cx="75" cy="44" r="6" fill="#f59e0b"/>
+  <circle cx="95" cy="44" r="6" fill="#10b981"/>
+  <text x="120" y="49" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-weight="bold" font-size="13">Resume Generator Web Application &amp; ATS Optimizer</text>
+  <rect x="610" y="32" width="145" height="24" rx="12" fill="#818cf8" fill-opacity="0.18" stroke="#818cf8" stroke-width="0.8"/>
+  <text x="625" y="48" fill="#a5b4fc" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="bold">ATS Score: 95/100</text>
+
+  <!-- Left: Interactive Form Controls -->
+  <rect x="30" y="80" width="380" height="345" rx="12" fill="#0b1329" stroke="#1e293b" stroke-width="1"/>
+  <text x="50" y="110" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="bold">DYNAMIC RESUME BUILDER CONTROLS</text>
+
+  <g transform="translate(50, 125)" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">
+    <text x="0" y="15" fill="#cbd5e1">Candidate Name &amp; Contact</text>
+    <rect x="0" y="22" width="340" height="32" rx="6" fill="#0f172a" stroke="#334155"/>
+    <text x="12" y="43" fill="#ffffff" font-size="11">Shaik Reena Kowsar | reenakowsar05@gmail.com</text>
+
+    <text x="0" y="75" fill="#cbd5e1">Target Role / Job Title</text>
+    <rect x="0" y="82" width="340" height="32" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+    <text x="12" y="103" fill="#38bdf8" font-size="11">Python Full Stack Developer &amp; AI/ML Engineer</text>
+
+    <text x="0" y="135" fill="#cbd5e1">Skills &amp; Technologies (Auto-tagging)</text>
+    <rect x="0" y="142" width="340" height="40" rx="6" fill="#0f172a" stroke="#334155"/>
+    <text x="12" y="166" fill="#a5b4fc" font-size="10">[Python] [SQL] [Streamlit] [Machine Learning] [OpenCV]</text>
+
+    <text x="0" y="205" fill="#cbd5e1">Template Layout Format</text>
+    <rect x="0" y="212" width="105" height="30" rx="6" fill="url(#purpleGrad)"/>
+    <text x="18" y="231" fill="#030712" font-weight="bold" font-size="11">Modern Clean</text>
+    <rect x="115" y="212" width="105" height="30" rx="6" fill="#1e293b" stroke="#334155"/>
+    <text x="135" y="231" fill="#cbd5e1" font-size="11">1-Page ATS</text>
+    <rect x="230" y="212" width="110" height="30" rx="6" fill="#1e293b" stroke="#334155"/>
+    <text x="245" y="231" fill="#cbd5e1" font-size="11">Academic CV</text>
+  </g>
+
+  <!-- Right: Real-time Rendered PDF Preview -->
+  <rect x="430" y="80" width="340" height="345" rx="12" fill="#0b1329" stroke="#1e293b" stroke-width="1"/>
+  <text x="450" y="110" fill="#a5b4fc" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="bold">LIVE ATS-PARSED PDF RENDER</text>
+
+  <!-- Mini White Resume Page -->
+  <rect x="450" y="125" width="300" height="245" rx="4" fill="#ffffff" stroke="#e2e8f0"/>
+  <rect x="470" y="145" width="260" height="18" fill="#0f172a"/>
+  <text x="475" y="158" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="bold">SHAIK REENA KOWSAR — PYTHON DEVELOPER</text>
+  <line x1="470" y1="168" x2="730" y2="168" stroke="#38bdf8" stroke-width="1.5"/>
+  <rect x="470" y="178" width="260" height="6" fill="#94a3b8"/>
+  <rect x="470" y="188" width="240" height="5" fill="#cbd5e1"/>
+  <rect x="470" y="200" width="80" height="10" fill="#0284c7"/>
+  <rect x="470" y="215" width="260" height="5" fill="#94a3b8"/>
+  <rect x="470" y="225" width="250" height="5" fill="#cbd5e1"/>
+  <rect x="470" y="235" width="210" height="5" fill="#cbd5e1"/>
+  
+  <rect x="470" y="250" width="100" height="10" fill="#0284c7"/>
+  <rect x="470" y="265" width="260" height="5" fill="#94a3b8"/>
+  <rect x="470" y="275" width="230" height="5" fill="#cbd5e1"/>
+
+  <!-- Bottom Instant Download Button -->
+  <rect x="450" y="380" width="300" height="35" rx="8" fill="url(#purpleGrad)"/>
+  <text x="520" y="402" fill="#030712" font-family="'Plus Jakarta Sans', sans-serif" font-weight="bold" font-size="12">Instant Export to PDF</text>
+</svg>

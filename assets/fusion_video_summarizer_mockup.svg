@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="vidBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080e1d"/>
+      <stop offset="100%" stop-color="#040711"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#vidBg)"/>
+
+  <!-- Top App Navigation -->
+  <rect x="30" y="20" width="740" height="48" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+  <circle cx="55" cy="44" r="6" fill="#ef4444"/>
+  <circle cx="75" cy="44" r="6" fill="#f59e0b"/>
+  <circle cx="95" cy="44" r="6" fill="#10b981"/>
+  <text x="120" y="49" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-weight="bold" font-size="13">YouTube Video Summarization &amp; Multimodal Fusion</text>
+  <rect x="630" y="32" width="125" height="24" rx="12" fill="#ef4444" fill-opacity="0.2" stroke="#ef4444" stroke-width="0.8"/>
+  <text x="645" y="48" fill="#f87171" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="bold">NLP + OpenCV</text>
+
+  <!-- Left: Video Ingestion & Keyframe Timeline -->
+  <rect x="30" y="80" width="430" height="345" rx="12" fill="#0b1329" stroke="#1e293b" stroke-width="1"/>
+  <text x="50" y="110" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="bold">VIDEO INPUT &amp; KEYFRAME EXTRACTION</text>
+
+  <!-- Video Player Preview -->
+  <rect x="50" y="125" width="390" height="175" rx="8" fill="#020617" stroke="#334155" stroke-width="0.8"/>
+  <circle cx="245" cy="212" r="26" fill="#ef4444" fill-opacity="0.9"/>
+  <polygon points="240,202 256,212 240,222" fill="#ffffff"/>
+  <text x="65" y="150" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600">Deep Learning Lecture: Attention Mechanism.mp4</text>
+  <text x="65" y="170" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="10">Duration: 42:15 • 1080p 60fps • Multimodal Audio Track</text>
+
+  <!-- Timeline Keyframes -->
+  <g transform="translate(50, 315)">
+    <text x="0" y="15" fill="#38bdf8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="bold">EXTRACTED KEYFRAMES (SCENE CHANGE DETECTION)</text>
+    <rect x="0" y="25" width="85" height="55" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="0.8"/>
+    <text x="15" y="58" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="9">[02:14]</text>
+    
+    <rect x="100" y="25" width="85" height="55" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="0.8"/>
+    <text x="115" y="58" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="9">[14:32]</text>
+
+    <rect x="200" y="25" width="85" height="55" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="0.8"/>
+    <text x="215" y="58" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="9">[28:45]</text>
+
+    <rect x="300" y="25" width="90" height="55" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="0.8"/>
+    <text x="315" y="58" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="9">[39:10]</text>
+  </g>
+
+  <!-- Right: Multimodal Fusion & Generated Summary -->
+  <rect x="480" y="80" width="290" height="345" rx="12" fill="#0b1329" stroke="#1e293b" stroke-width="1"/>
+  <text x="500" y="110" fill="#38bdf8" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="bold">AI FUSION &amp; EXECUTIVE SUMMARY</text>
+
+  <!-- Compression Metric Card -->
+  <rect x="500" y="125" width="250" height="60" rx="8" fill="#0f172a" stroke="#38bdf8" stroke-width="0.8"/>
+  <text x="515" y="148" fill="#38bdf8" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="bold">78% Reduction</text>
+  <text x="515" y="168" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">42m video summarized in 2.4 min read</text>
+
+  <!-- Bullet Summaries -->
+  <g transform="translate(500, 205)" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">
+    <rect x="0" y="0" width="250" height="48" rx="6" fill="#0f172a" stroke="#1e293b"/>
+    <text x="10" y="20" fill="#e2e8f0" font-weight="600">• Attention Mechanisms</text>
+    <text x="10" y="36" fill="#94a3b8" font-size="9">Key equations at [14:32], query-key dot product.</text>
+
+    <rect x="0" y="56" width="250" height="48" rx="6" fill="#0f172a" stroke="#1e293b"/>
+    <text x="10" y="76" fill="#e2e8f0" font-weight="600">• Transformer Architecture</text>
+    <text x="10" y="92" fill="#94a3b8" font-size="9">Positional encoding &amp; multi-head breakdown.</text>
+
+    <rect x="0" y="112" width="250" height="48" rx="6" fill="#0f172a" stroke="#1e293b"/>
+    <text x="10" y="132" fill="#e2e8f0" font-weight="600">• SOTA Benchmarks</text>
+    <text x="10" y="148" fill="#94a3b8" font-size="9">BLEU scores on WMT 2014 translation test.</text>
+
+    <rect x="0" y="170" width="250" height="35" rx="6" fill="url(#cyanGrad)"/>
+    <text x="40" y="192" fill="#030712" font-weight="bold" font-size="11">⚡ Export Structured Notes</text>
+  </g>
+</svg>

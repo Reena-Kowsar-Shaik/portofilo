@@ -1,6 +1,6 @@
 /**
  * PORTFOLIO CONFIGURATION DATA
- * SHAIK REENA KOWSAR — Python Full Stack Developer & AI/ML Engineer
+ * SHAIK REENA KOWSAR — Aspiring Python Developer & AI/ML Enthusiast
  */
 
 const PORTFOLIO_DATA = {
@@ -8,26 +8,27 @@ const PORTFOLIO_DATA = {
   personal: {
     name: "Shaik Reena Kowsar",
     preferredName: "Reena",
-    role: "Python Full Stack Developer & AI/ML Engineer",
-    tagline: "B.Tech CSE (AI & ML) graduate from Bapatla Engineering College (CGPA: 9.1/10). Building end-to-end database-driven web applications, RAG multimodal systems, and intelligent analytics dashboards.",
+    role: "Aspiring Python Developer | AI & Machine Learning Enthusiast",
+    tagline: "B.Tech Graduate in Computer Science (AI & ML) from Bapatla Engineering College (CGPA: 9.1/10). Enhancing skills in Python Full Stack Development, Data Structures, and AI technologies.",
     typingRoles: [
+      "Aspiring Python Developer",
+      "AI & Machine Learning Enthusiast",
       "Python Full Stack Developer",
-      "AI / ML & LLM Engineer",
-      "RAG & Multimodal Systems Builder",
-      "Streamlit & Django/Flask Developer",
-      "Database & Analytics Specialist"
+      "NLP & Computer Vision Builder",
+      "Data Structures & Problem Solver"
     ],
     status: {
       available: true,
-      text: "Actively seeking Python Full Stack Developer & AI/ML Engineer Roles (Batch 2022–2026)"
+      text: "Actively seeking Python Full Stack Developer & AI/ML Engineer Roles"
     },
     location: "Hyderabad, Telangana, India",
     email: "reenakowsar05@gmail.com",
     phone: "+91 8639214710",
     avatar: "assets/reena_photo.jpeg",
     bio: [
-      "I am a B.Tech Computer Science and Engineering (AI & ML) student at Bapatla Engineering College with an outstanding CGPA of 9.1/10 and recipient of the Academic Shield of Excellence.",
-      "As a Python Full Stack trainee and AI/ML enthusiast, I build complete, database-driven applications featuring role-based authentication, relational schemas, REST-style workflows, and analytics dashboards. I have designed and deployed live production applications including an IT Helpdesk & Support Intelligence System and Smart Memory Vault (Multimodal RAG)."
+      "I am a B.Tech Graduate in Computer Science and Engineering (AI & ML) from Bapatla Engineering College with an outstanding CGPA of 9.1/10 and recipient of the Academic Shield of Excellence.",
+      "Currently enhancing my skills in Python Full Stack Development, Data Structures, and AI technologies. Passionate about building real-world applications using Python, Machine Learning, NLP, and Computer Vision.",
+      "My production-grade projects include the Smart Memory Vault (Multimodal RAG Knowledge System), an IT Helpdesk & Support Intelligence System (MySQL, SLA tracking, RBAC), and IntelliCode (AI Code Reviewer & Bug Analyzer)."
     ],
     stats: [
       { label: "B.Tech CGPA", value: "9.1 / 10", number: 9.1 },
@@ -61,7 +62,7 @@ const PORTFOLIO_DATA = {
     },
     {
       title: "Academic & Certification Dossier",
-      subtitle: "Includes college ranking, Bapatla Engineering College credentials, and IBM/Cisco certifications",
+      subtitle: "Includes college credentials, Bapatla Engineering College honors, and IBM/Cisco/Infosys certifications",
       format: "PDF (Academic)",
       fileSize: "210 KB",
       icon: "graduation-cap",
@@ -84,11 +85,10 @@ const PORTFOLIO_DATA = {
       coursework: [
         "Artificial Intelligence & Machine Learning",
         "Natural Language Processing (NLP)",
-        "Retrieval-Augmented Generation (RAG)",
+        "Deep Learning & Computer Vision",
         "Data Structures & Algorithms",
         "Database Management Systems (MySQL/PostgreSQL)",
         "Object-Oriented Programming (Python)",
-        "Computer Vision & CNN",
         "REST APIs & Web Architectures",
         "Operating Systems & Computer Networks"
       ]
@@ -113,18 +113,18 @@ const PORTFOLIO_DATA = {
     }
   ],
 
-  // Projects (From Resume)
+  // Projects (The 3 Core Production Projects)
   projects: [
     {
       id: "project-1",
       title: "Smart Memory Vault: AI-Powered Multimodal Knowledge System",
-      subtitle: "RAG & LLM multimodal document intelligence platform",
+      subtitle: "RAG & LLM multimodal document intelligence & video transcript summarization",
       category: "ai",
       featured: true,
       image: "assets/smart_memory_vault_mockup.svg",
       tags: ["Python", "Streamlit", "PostgreSQL", "SQLAlchemy", "RAG", "NLP", "OCR", "Bcrypt"],
       demoUrl: "https://example.com/demo",
-      githubUrl: "https://github.com",
+      githubUrl: "https://github.com/Reena-05",
       description: "An AI-powered multimodal knowledge management platform that ingests and processes PDFs, images via OCR, YouTube video transcripts, and audio notes supporting 50+ documents and 300+ text chunks.",
       highlights: [
         "Implemented hybrid TF-IDF and embedding-based retrieval using cosine similarity, source citations, and confidence scoring, achieving 91% top-3 accuracy across 50+ test queries.",
@@ -132,7 +132,7 @@ const PORTFOLIO_DATA = {
         "Integrated secure Bcrypt authentication and deployed live on Streamlit Cloud for 25+ users with a 1.2s average response time."
       ],
       caseStudy: {
-        challenge: "Handling unstructured data across multiple modalities (text, scanned PDF OCR, audio transcripts) with fast, hallucination-free retrieval.",
+        challenge: "Handling unstructured data across multiple modalities (text, scanned PDF OCR, YouTube transcripts, audio) with fast, hallucination-free retrieval.",
         solution: "Engineered a hybrid retrieval pipeline pairing semantic dense embeddings with lexical TF-IDF matching, providing direct source citation snippets and confidence scoring.",
         results: "91% top-3 retrieval accuracy, sub-1.2s response latency, deployed live on Streamlit Cloud for 25+ active users."
       }
@@ -146,7 +146,7 @@ const PORTFOLIO_DATA = {
       image: "assets/it_helpdesk_mockup.svg",
       tags: ["Python", "Streamlit", "SQLAlchemy", "MySQL", "Plotly", "Pandas", "Bcrypt"],
       demoUrl: "https://example.com/demo",
-      githubUrl: "https://github.com",
+      githubUrl: "https://github.com/Reena-05",
       description: "A complete, production-grade IT support ticketing platform featuring role-based access control (RBAC), workload-aware ticket distribution, and interactive executive analytics dashboards.",
       highlights: [
         "Designed an 11-table normalized relational MySQL schema with SQLAlchemy ORM.",
@@ -168,7 +168,7 @@ const PORTFOLIO_DATA = {
       image: "assets/ai_code_reviewer_mockup.svg",
       tags: ["Python", "Streamlit", "Gemini API", "AST", "Static Analysis", "Pylint", "SQLAlchemy"],
       demoUrl: "https://example.com/demo",
-      githubUrl: "https://github.com",
+      githubUrl: "https://github.com/Reena-05",
       description: "An intelligent automated code review tool that analyzes code submissions, detects syntax bugs, security vulnerabilities (SQL injections, unsafe eval), performance bottlenecks, and generates optimized PEP 8 refactorings with time complexity metrics.",
       highlights: [
         "Integrated Python Abstract Syntax Tree (AST) parsing with Gemini API to inspect code quality, detect security antipatterns, and calculate cyclomatic complexity.",
@@ -207,31 +207,27 @@ const PORTFOLIO_DATA = {
     }
   ],
 
-  // Technical Skills (Categorized from Resume)
+  // Technical Skills (Categorized matching user's GitHub skills)
   skillCategories: [
     {
       name: "Programming Languages",
-      skills: ["Python", "C", "SQL", "JavaScript", "HTML5", "CSS3"]
+      skills: ["Python", "C", "SQL"]
     },
     {
-      name: "AI, GenAI & Data Science",
-      skills: ["Generative AI (Gemini API)", "RAG (Retrieval-Augmented Generation)", "LLM Applications", "NLP", "Machine Learning", "Scikit-Learn", "NLTK", "OpenCV", "CNN", "Embeddings"]
+      name: "AI & Machine Learning",
+      skills: ["Machine Learning", "Deep Learning", "NLP (Natural Language Processing)", "Computer Vision", "OpenCV", "CNN", "RAG & LLM", "Scikit-Learn"]
     },
     {
-      name: "Backend, Web & APIs",
-      skills: ["REST APIs", "Streamlit", "Django", "Flask", "SQLAlchemy ORM", "Bcrypt Authentication"]
+      name: "Frameworks & Tools",
+      skills: ["Streamlit", "OpenCV", "Scikit-learn", "Git", "GitHub", "Pandas", "Plotly", "Jupyter Notebook"]
     },
     {
-      name: "Databases & Storage",
-      skills: ["MySQL (Relational Schemas)", "PostgreSQL", "Database Design", "SQL Queries"]
-    },
-    {
-      name: "Developer Tools & Libraries",
-      skills: ["Git & GitHub", "Jupyter Notebook", "Google Colab", "Pandas", "Plotly", "NumPy"]
+      name: "Web Technologies & Databases",
+      skills: ["HTML", "CSS", "JavaScript", "MySQL", "PostgreSQL", "SQLAlchemy ORM", "REST APIs", "Bcrypt"]
     }
   ],
 
-  // Certifications (From Resume)
+  // Certifications (From GitHub & Resume)
   certifications: [
     {
       title: "Python Essentials",
@@ -244,7 +240,12 @@ const PORTFOLIO_DATA = {
       icon: "sparkles"
     },
     {
-      title: "Introduction to AI & ML Fundamentals",
+      title: "Introduction to Artificial Intelligence",
+      issuer: "Infosys Springboard",
+      icon: "cpu"
+    },
+    {
+      title: "Machine Learning Fundamentals",
       issuer: "Infosys Springboard",
       icon: "cpu"
     },
@@ -255,7 +256,7 @@ const PORTFOLIO_DATA = {
     }
   ],
 
-  // Key Achievements (From Resume)
+  // Key Achievements
   achievements: [
     {
       title: "Academic Shield of Excellence & College Honors",
@@ -274,12 +275,13 @@ const PORTFOLIO_DATA = {
     }
   ],
 
-  // Social & Professional Profiles (From Resume)
+  // Social & Professional Profiles (Exact Links from user's GitHub)
   socials: [
-    { name: "LinkedIn", url: "https://linkedin.com", icon: "linkedin" },
-    { name: "GitHub", url: "https://github.com", icon: "github" },
-    { name: "LeetCode", url: "https://leetcode.com", icon: "code-2" },
-    { name: "HackerRank", url: "https://hackerrank.com", icon: "terminal" },
+    { name: "LinkedIn", url: "https://www.linkedin.com/in/reenakowsar", icon: "linkedin" },
+    { name: "GitHub", url: "https://github.com/Reena-05", icon: "github" },
+    { name: "LeetCode", url: "https://leetcode.com/u/Reena_kowsar22/", icon: "code-2" },
+    { name: "HackerRank", url: "https://www.hackerrank.com/profile/reenakowsar05", icon: "terminal" },
+    { name: "Codegnan", url: "https://www.codegnan.me/reenakowsar05", icon: "globe" },
     { name: "Email", url: "mailto:reenakowsar05@gmail.com", icon: "mail" }
   ]
 };

@@ -493,15 +493,15 @@ document.addEventListener('DOMContentLoaded', () => {
   <span class="text-primary">contact</span>    - Email, phone, location & profiles
   <span class="text-primary">clear</span>      - Clear terminal screen`,
     
-    whoami: `<span class="text-white font-bold">Shaik Reena Kowsar</span> — Software Engineer & Python Full Stack Developer
-B.Tech CSE (AI & ML) at Bapatla Engineering College | CGPA: 9.1/10 (Academic Excellence Shield)
-Building production RAG systems, database-driven web applications, and AI models.`,
+    whoami: `<span class="text-white font-bold">Shaik Reena Kowsar</span> — Aspiring Python Developer | AI & Machine Learning Enthusiast
+🎓 B.Tech Graduate in Computer Science (AI & ML) from Bapatla Engineering College (CGPA: 9.1/10)
+🌱 Currently enhancing skills in Python Full Stack Development, Data Structures, and AI technologies.
+🚀 Passionate about building real-world applications using Python, Machine Learning, NLP, and Computer Vision.`,
 
-    skills: `<span class="text-primary font-bold">LANGUAGES:</span> Python, C, SQL, JavaScript, HTML5, CSS3
-<span class="text-primary font-bold">AI & DATA:</span> RAG (Hybrid Retrieval), Gemini API, LangChain, NLP, Scikit-learn, NLTK, OpenCV
-<span class="text-primary font-bold">BACKEND:</span> Streamlit, REST APIs, Django, Flask, SQLAlchemy ORM, Bcrypt
-<span class="text-primary font-bold">DATABASES:</span> PostgreSQL, MySQL (11-table normalized schemas)
-<span class="text-primary font-bold">TOOLS:</span> Git/GitHub, Docker, Pandas, Plotly, Jupyter Notebook`,
+    skills: `<span class="text-primary font-bold">LANGUAGES:</span> Python, C, SQL
+<span class="text-primary font-bold">AI & ML:</span> Machine Learning, Deep Learning, NLP, Computer Vision, OpenCV, CNN, Scikit-learn
+<span class="text-primary font-bold">FRAMEWORKS & TOOLS:</span> Streamlit, OpenCV, Scikit-learn, Git, GitHub, Pandas, Plotly, Jupyter
+<span class="text-primary font-bold">WEB & DATABASES:</span> HTML, CSS, JavaScript, MySQL, PostgreSQL, SQLAlchemy ORM, REST APIs, Bcrypt`,
 
     projects: `1. <span class="text-primary font-bold">Smart Memory Vault</span> (Multimodal RAG, OCR, Audio, PostgreSQL, Streamlit)
 2. <span class="text-primary font-bold">IT Helpdesk & Intelligence System</span> (MySQL, SLA Tracking, RBAC, Plotly)
@@ -512,10 +512,14 @@ Degree: B.Tech, Computer Science and Engineering (AI & ML)
 <span class="text-emerald-400 font-bold">CGPA: 9.1 / 10 • Academic Excellence Shield</span>
 Class XII (Narayana): 96% | Class X (Z.P. High School): 96%`,
 
-    contact: `Email:    <a href="mailto:reenakowsar05@gmail.com" class="text-primary underline">reenakowsar05@gmail.com</a>
-Phone:    +91 8639214710
-Location: Hyderabad, Telangana, India
-LinkedIn: linkedin.com | GitHub: github.com`
+    contact: `Email:      <a href="mailto:reenakowsar05@gmail.com" class="text-primary underline">reenakowsar05@gmail.com</a>
+Phone:      +91 8639214710
+Location:   Hyderabad, Telangana, India
+LinkedIn:   <a href="https://www.linkedin.com/in/reenakowsar" target="_blank" class="text-primary underline">linkedin.com/in/reenakowsar</a>
+GitHub:     <a href="https://github.com/Reena-05" target="_blank" class="text-primary underline">github.com/Reena-05</a>
+LeetCode:   <a href="https://leetcode.com/u/Reena_kowsar22/" target="_blank" class="text-primary underline">leetcode.com/u/Reena_kowsar22</a>
+HackerRank: <a href="https://www.hackerrank.com/profile/reenakowsar05" target="_blank" class="text-primary underline">hackerrank.com/profile/reenakowsar05</a>
+Codegnan:   <a href="https://www.codegnan.me/reenakowsar05" target="_blank" class="text-primary underline">codegnan.me/reenakowsar05</a>`
   };
 
   function handleCliCommand(cmd) {
