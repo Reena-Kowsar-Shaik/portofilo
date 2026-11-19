@@ -79,7 +79,7 @@ def build_pdf(filename, title_tag="COMPREHENSIVE RESUME"):
     # Header
     elements.append(Paragraph("SHAIK REENA KOWSAR", name_style))
     elements.append(Paragraph("Hyderabad, Telangana, India &nbsp;|&nbsp; +91 8639214710 &nbsp;|&nbsp; reenakowsar05@gmail.com", contact_style))
-    elements.append(Paragraph("<b>LinkedIn:</b> linkedin.com &nbsp;|&nbsp; <b>GitHub:</b> github.com &nbsp;|&nbsp; <b>LeetCode:</b> leetcode.com &nbsp;|&nbsp; <b>HackerRank:</b> hackerrank.com", contact_style))
+    elements.append(Paragraph("<b>LinkedIn:</b> linkedin.com/in/reenakowsar &nbsp;|&nbsp; <b>GitHub:</b> github.com/Reena-05 &nbsp;|&nbsp; <b>LeetCode:</b> leetcode.com/u/Reena_kowsar22 &nbsp;|&nbsp; <b>HackerRank:</b> hackerrank.com/profile/reenakowsar05", contact_style))
     elements.append(Spacer(1, 4))
     elements.append(HRFlowable(width="100%", thickness=1, color=colors.HexColor('#475569'), spaceBefore=2, spaceAfter=6))
 
@@ -87,7 +87,7 @@ def build_pdf(filename, title_tag="COMPREHENSIVE RESUME"):
     elements.append(Paragraph("CAREER OBJECTIVE", sec_title))
     elements.append(HRFlowable(width="100%", thickness=0.5, color=colors.HexColor('#cbd5e1'), spaceBefore=1, spaceAfter=4))
     elements.append(Paragraph(
-        "B.Tech CSE graduate (AI & ML) and Python Full Stack trainee who builds complete, database-driven applications with role-based authentication, relational schemas, REST-style workflows, and analytics dashboards, backed by hands-on AI/ML experience in RAG, NLP, Scikit-learn, and OCR. Deployed live applications using Python, Streamlit, SQLAlchemy, MySQL, and PostgreSQL. Seeking Python Full Stack Developer and AI/ML Engineer roles in a product-driven team.",
+        "B.Tech CSE Graduate (AI & ML) from Bapatla Engineering College (CGPA: 9.1/10) and Aspiring Python Developer passionate about building real-world applications using Python, Machine Learning, NLP, and Computer Vision. Experienced in building complete, database-driven applications with role-based authentication, relational schemas, REST workflows, and analytics dashboards. Seeking Python Developer and AI/ML Engineer roles.",
         body
     ))
     elements.append(Spacer(1, 4))
@@ -164,3 +164,6 @@ if __name__ == '__main__':
     build_pdf("assets/Shaik_Reena_Kowsar_Resume.pdf", "Comprehensive Technical Resume")
     build_pdf("assets/Shaik_Reena_Kowsar_ATS_Resume.pdf", "ATS-Optimized Resume")
     build_pdf("assets/Shaik_Reena_Kowsar_Academic_Profile.pdf", "Academic & Certification Dossier")
+    build_pdf("Shaik_Reena_Kowsar_Resume.pdf", "Comprehensive Technical Resume")
+    build_pdf("Shaik_Reena_Kowsar_ATS_Resume.pdf", "ATS-Optimized Resume")
+    build_pdf("Shaik_Reena_Kowsar_Academic_Profile.pdf", "Academic & Certification Dossier")
