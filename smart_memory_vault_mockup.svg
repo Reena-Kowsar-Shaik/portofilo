@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1329"/>
+      <stop offset="100%" stop-color="#050a17"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141f36"/>
+      <stop offset="100%" stop-color="#0e172a"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="450" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Grid Lines -->
+  <g stroke="#1e293b" stroke-width="0.5" opacity="0.4">
+    <line x1="0" y1="90" x2="800" y2="90"/>
+    <line x1="0" y1="180" x2="800" y2="180"/>
+    <line x1="0" y1="270" x2="800" y2="270"/>
+    <line x1="0" y1="360" x2="800" y2="360"/>
+    <line x1="200" y1="0" x2="200" y2="450"/>
+    <line x1="400" y1="0" x2="400" y2="450"/>
+    <line x1="600" y1="0" x2="600" y2="450"/>
+  </g>
+
+  <!-- Top App Navigation Bar -->
+  <rect x="30" y="25" width="740" height="50" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+  <circle cx="55" cy="50" r="6" fill="#ef4444"/>
+  <circle cx="75" cy="50" r="6" fill="#f59e0b"/>
+  <circle cx="95" cy="50" r="6" fill="#10b981"/>
+  
+  <text x="120" y="55" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-weight="bold" font-size="14">Smart Memory Vault</text>
+  <text x="270" y="55" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="11">RAG Multimodal Knowledge System</text>
+
+  <!-- Status Pill -->
+  <rect x="645" y="38" width="110" height="24" rx="12" fill="#0284c7" fill-opacity="0.2" stroke="#38bdf8" stroke-width="1"/>
+  <circle cx="658" cy="50" r="3.5" fill="#38bdf8"/>
+  <text x="668" y="54" fill="#38bdf8" font-family="'Plus Jakarta Sans', sans-serif" font-weight="bold" font-size="10">LIVE STREAMLIT</text>
+
+  <!-- Left Sidebar Ingestion Sources -->
+  <rect x="30" y="90" width="220" height="330" rx="12" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1"/>
+  <text x="50" y="120" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-weight="bold" font-size="11" letter-spacing="1">MULTIMODAL SOURCES</text>
+
+  <!-- Ingestion Badges -->
+  <g transform="translate(48, 135)">
+    <!-- PDF -->
+    <rect x="0" y="0" width="184" height="38" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="0.8"/>
+    <text x="35" y="24" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="600">PDF Documents (50+)</text>
+    <circle cx="18" cy="19" r="6" fill="#ef4444" fill-opacity="0.8"/>
+
+    <!-- Images OCR -->
+    <rect x="0" y="48" width="184" height="38" rx="8" fill="#1e293b" stroke="#334155" stroke-width="0.8"/>
+    <text x="35" y="72" fill="#cbd5e1" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="600">Scanned OCR Images</text>
+    <circle cx="18" cy="67" r="6" fill="#38bdf8" fill-opacity="0.8"/>
+
+    <!-- YouTube Transcripts -->
+    <rect x="0" y="96" width="184" height="38" rx="8" fill="#1e293b" stroke="#334155" stroke-width="0.8"/>
+    <text x="35" y="120" fill="#cbd5e1" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="600">YouTube Audio Video</text>
+    <circle cx="18" cy="115" r="6" fill="#f59e0b" fill-opacity="0.8"/>
+
+    <!-- Voice Notes -->
+    <rect x="0" y="144" width="184" height="38" rx="8" fill="#1e293b" stroke="#334155" stroke-width="0.8"/>
+    <text x="35" y="168" fill="#cbd5e1" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="600">Audio Speech Transcripts</text>
+    <circle cx="18" cy="163" r="6" fill="#10b981" fill-opacity="0.8"/>
+  </g>
+
+  <!-- Database & Vector Index Stats -->
+  <rect x="48" y="340" width="184" height="60" rx="8" fill="#0f172a" stroke="#1e293b"/>
+  <text x="60" y="362" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">PostgreSQL + SQLAlchemy</text>
+  <text x="60" y="385" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">Indexed: 300+ Chunks • 1.2s Latency</text>
+
+  <!-- Right Main Area: Hybrid Search & RAG Result -->
+  <rect x="265" y="90" width="505" height="330" rx="12" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Search Input Bar -->
+  <rect x="285" y="110" width="465" height="42" rx="8" fill="#0b1329" stroke="#38bdf8" stroke-width="1.2"/>
+  <text x="310" y="136" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="12">What are Transformer Attention Heads in LLMs?</text>
+  <rect x="685" y="116" width="55" height="30" rx="6" fill="url(#cyanGrad)"/>
+  <text x="702" y="136" fill="#030712" font-family="'Plus Jakarta Sans', sans-serif" font-weight="bold" font-size="11">RAG</text>
+
+  <!-- Retrieval Metrics Bar -->
+  <g transform="translate(285, 165)">
+    <rect x="0" y="0" width="150" height="26" rx="13" fill="#0f172a" stroke="#10b981" stroke-width="0.8"/>
+    <text x="12" y="17" fill="#10b981" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="bold">Top-3 Accuracy: 91%</text>
+
+    <rect x="160" y="0" width="145" height="26" rx="13" fill="#0f172a" stroke="#38bdf8" stroke-width="0.8"/>
+    <text x="172" y="17" fill="#38bdf8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="bold">Cosine Similarity: 0.94</text>
+
+    <rect x="315" y="0" width="150" height="26" rx="13" fill="#0f172a" stroke="#f59e0b" stroke-width="0.8"/>
+    <text x="327" y="17" fill="#f59e0b" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="bold">Hybrid Dense + TF-IDF</text>
+  </g>
+
+  <!-- Extracted Knowledge Output Card -->
+  <rect x="285" y="205" width="465" height="145" rx="10" fill="#0b1329" stroke="#1e293b" stroke-width="1"/>
+  <text x="305" y="230" fill="#38bdf8" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="bold">SOURCE CITATION: ML_Lecture_Notes.pdf (Page 18, Chunk #42)</text>
+  <text x="305" y="255" fill="#f8fafc" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="500">"Multi-Head Attention projects queries, keys, and values h times with linear</text>
+  <text x="305" y="275" fill="#f8fafc" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="500">projections, allowing the model to jointly attend to information from different</text>
+  <text x="305" y="295" fill="#f8fafc" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="500">representation subspaces across multimodal text and transcription vectors."</text>
+  
+  <text x="305" y="330" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="10">NLP Engine: NLTK • Scikit-Learn • Bcrypt Auth • Streamlit Cloud</text>
+
+  <!-- Interactive Action Tabs Bottom -->
+  <g transform="translate(285, 365)">
+    <rect x="0" y="0" width="105" height="32" rx="6" fill="#1e293b" stroke="#334155"/>
+    <text x="18" y="20" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="bold">📝 Summarize</text>
+
+    <rect x="115" y="0" width="105" height="32" rx="6" fill="#1e293b" stroke="#334155"/>
+    <text x="130" y="20" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="bold">🎴 Flashcards</text>
+
+    <rect x="230" y="0" width="105" height="32" rx="6" fill="#1e293b" stroke="#334155"/>
+    <text x="248" y="20" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="bold">⚡ AI Quiz</text>
+
+    <rect x="345" y="0" width="120" height="32" rx="6" fill="url(#cyanGrad)"/>
+    <text x="357" y="20" fill="#030712" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="bold">🚀 Export Insights</text>
+  </g>
+</svg>

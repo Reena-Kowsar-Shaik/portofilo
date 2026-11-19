@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="codeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1329"/>
+      <stop offset="100%" stop-color="#050a17"/>
+    </linearGradient>
+    <linearGradient id="cyanAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#codeBg)"/>
+
+  <!-- Top App Navigation Bar -->
+  <rect x="30" y="25" width="740" height="50" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+  <circle cx="55" cy="50" r="6" fill="#ef4444"/>
+  <circle cx="75" cy="50" r="6" fill="#f59e0b"/>
+  <circle cx="95" cy="50" r="6" fill="#10b981"/>
+  <text x="120" y="55" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-weight="bold" font-size="14">IntelliCode: AI Code Reviewer &amp; Bug Analyzer</text>
+  <text x="470" y="55" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="11">AST Engine + Gemini API</text>
+
+  <!-- Left: Original Code with AST Flags -->
+  <rect x="30" y="90" width="360" height="330" rx="10" fill="#0f172a" stroke="#1e293b"/>
+  <text x="50" y="120" fill="#f43f5e" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">SOURCE CODE (VULNERABILITIES FOUND)</text>
+
+  <g transform="translate(50, 140)" font-family="'JetBrains Mono', monospace" font-size="11" xml:space="preserve">
+    <text x="0" y="20" fill="#94a3b8">1</text>
+    <text x="25" y="20" fill="#60a5fa">def</text>
+    <text x="55" y="20" fill="#38bdf8">fetch_user_records</text>
+    <text x="185" y="20" fill="#e2e8f0">(user_id):</text>
+
+    <text x="0" y="45" fill="#94a3b8">2</text>
+    <text x="45" y="45" fill="#e2e8f0">query =</text>
+    <text x="110" y="45" fill="#f87171">f"SELECT * FROM users"</text>
+
+    <!-- Bug line highlighted -->
+    <rect x="-10" y="55" width="340" height="28" rx="4" fill="#ef4444" fill-opacity="0.15" stroke="#ef4444" stroke-width="0.8"/>
+    <text x="0" y="74" fill="#f87171">3</text>
+    <text x="45" y="74" fill="#fca5a5">query += f" WHERE id={user_id}"</text>
+
+    <text x="0" y="105" fill="#94a3b8">4</text>
+    <text x="45" y="105" fill="#e2e8f0">cursor.execute(query)</text>
+
+    <text x="0" y="130" fill="#94a3b8">5</text>
+    <text x="45" y="130" fill="#60a5fa">return</text>
+    <text x="95" y="130" fill="#e2e8f0">cursor.fetchall()</text>
+  </g>
+
+  <!-- Vulnerability Card Warning -->
+  <rect x="50" y="300" width="320" height="100" rx="8" fill="#1e1b2e" stroke="#ef4444" stroke-width="1"/>
+  <text x="65" y="325" fill="#ef4444" font-family="'Plus Jakarta Sans', sans-serif" font-weight="bold" font-size="11">⚠️ AST SECURITY TRAP DETECTED</text>
+  <text x="65" y="348" fill="#fca5a5" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">CWE-89: SQL Injection Vulnerability</text>
+  <text x="65" y="370" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">Unsanitized f-string formatting in raw SQL query.</text>
+  <text x="65" y="388" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="10">Severity: CRITICAL • Complexity: O(1)</text>
+
+  <!-- Right: AI Refactored Code with Gemini -->
+  <rect x="410" y="90" width="360" height="330" rx="10" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
+  <text x="430" y="120" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="bold">AI REFACTORED (PEP 8 &amp; SECURE)</text>
+
+  <g transform="translate(430, 140)" font-family="'JetBrains Mono', monospace" font-size="11" xml:space="preserve">
+    <text x="0" y="20" fill="#94a3b8">1</text>
+    <text x="25" y="20" fill="#60a5fa">def</text>
+    <text x="55" y="20" fill="#38bdf8">fetch_user_records</text>
+    <text x="185" y="20" fill="#e2e8f0">(user_id: int):</text>
+
+    <text x="0" y="45" fill="#94a3b8">2</text>
+    <text x="45" y="45" fill="#94a3b8">&quot;&quot;&quot;Parameterized safe execution&quot;&quot;&quot;</text>
+
+    <!-- Refactored line highlighted -->
+    <rect x="-10" y="55" width="340" height="28" rx="4" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-width="0.8"/>
+    <text x="0" y="74" fill="#34d399">3</text>
+    <text x="45" y="74" fill="#6ee7b7">stmt = "SELECT * FROM users WHERE id=%s"</text>
+
+    <text x="0" y="105" fill="#94a3b8">4</text>
+    <text x="45" y="105" fill="#e2e8f0">cursor.execute(stmt, (user_id,))</text>
+
+    <text x="0" y="130" fill="#94a3b8">5</text>
+    <text x="45" y="130" fill="#60a5fa">return</text>
+    <text x="95" y="130" fill="#e2e8f0">cursor.fetchall()</text>
+  </g>
+
+  <!-- AI Optimization Card -->
+  <rect x="430" y="300" width="320" height="100" rx="8" fill="#062e24" stroke="#10b981" stroke-width="1"/>
+  <text x="445" y="325" fill="#10b981" font-family="'Plus Jakarta Sans', sans-serif" font-weight="bold" font-size="11">✅ GEMINI LLM REFACTORING COMPLETE</text>
+  <text x="445" y="348" fill="#a7f3d0" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">Applied Parameterized SQL Execution</text>
+  <text x="445" y="370" fill="#cbd5e1" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">Automated unit test generated in 1.4s.</text>
+  <text x="445" y="388" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="10">Pylint Score: 10.0 / 10 • Clean Code</text>
+</svg>
